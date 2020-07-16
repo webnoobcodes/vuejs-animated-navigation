@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div>
     <slot />
     <h1>Mood</h1>
     <img src="../assets/mood.jpg" alt="">
@@ -10,27 +10,17 @@
 </template>
 
 <style lang="scss" scoped>
-  .content {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 16px;
-    background-color: #fff;
-    transition: .3s all ease-in-out;
+   img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 32px;
+  }
 
-    img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      margin-bottom: 32px;
-    }
-
-    p {
-      margin: 0;
-      padding: 0;
-      font-size: 1.8rem;
-      line-height: 1.5em;
-    }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 1.5em;
   }
 </style>
